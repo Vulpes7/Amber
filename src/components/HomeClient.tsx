@@ -1,0 +1,112 @@
+'use client';
+
+import Image from 'next/image';
+import Link from 'next/link';
+import { getFeaturedProjects } from '@/data/projects';
+import ProjectCard from '@/components/ProjectCard';
+import { useLanguage } from '@/context/LanguageContext';
+
+export default function HomeClient() {
+  const { t } = useLanguage();
+  const featured = getFeaturedProjects();
+
+  return (
+    <>
+      {/* Hero */}
+      <section className="relative w-full h-screen min-h-[600px] flex items-end pb-16 overflow-hidden" aria-label="Hero">
+        <div className="absolute inset-0 bg-[#1A1A18]">
+          <Image
+            src="/images/projects/double-height-living/01.jpg"
+            alt="Amber Collective — Architecture & Interiors"
+            fill
+            className="object-cover opacity-60"
+            priority
+          />
+        </div>
+
+        <div className="relative z-10 max-w-screen-xl mx-auto px-6 md:px-12 w-full">
+          <p className="text-xs tracking-widest uppercase text-white/60 mb-4">
+            {t('Bangalore, India', 'ಬೆಂಗಳೂರು, ಭಾರತ')}
+          </p>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-light text-white leading-tight max-w-2xl">
+            {t(
+              'Architecture & Interiors for the considered life.',
+              'ವಿಚಾರಶೀಲ ಜೀವನಕ್ಕಾಗಿ ವಾಸ್ತುಶಿಲ್ಪ ಮತ್ತು ಒಳಾಂಗಣ.'
+            )}
+          </h1>
+          <div className="mt-10 flex items-center gap-8">
+            <Link
+              href="/work"
+              className="text-sm tracking-widest uppercase text-white border-b border-white/40 pb-0.5 hover:border-white transition-colors"
+            >
+              {t('View Work', 'ಕೆಲಸ ನೋಡಿ')}
+            </Link>
+            <Link
+              href="/contact"
+              className="text-sm tracking-widest uppercase text-white/60 hover:text-white transition-colors"
+            >
+              {t('Start a Project', 'ಪ್ರಾಜೆಕ್ಟ್ ಪ್ರಾರಂಭಿಸಿ')}
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Studio Statement */}
+      <section className="max-w-screen-xl mx-auto px-6 md:px-12 py-24 md:py-32" aria-label="Studio statement">
+        <div className="max-w-3xl">
+          <p className="text-xs tracking-widest uppercase text-[#8C8C88] mb-6">
+            {t('Amber Collective', 'ಅಂಬರ್ ಕಲೆಕ್ಟಿವ್')}
+          </p>
+          <p className="text-2xl md:text-3xl font-light leading-relaxed text-[#1A1A18]">
+            {t(
+              'We design spaces that endure — where materiality, light, and proportion unite to create environments of quiet distinction.',
+              'ನಾವು ಬಾಳಿಕೊಳ್ಳುವ ಜಾಗಗಳನ್ನು ವಿನ್ಯಾಸ ಮಾಡುತ್ತೇವೆ — ಅಲ್ಲಿ ವಸ್ತು, ಬೆಳಕು ಮತ್ತು ಅನುಪಾತ ಒಗ್ಗೂಡಿ ಶಾಂತ ವಿಶಿಷ್ಟತೆಯ ಪರಿಸರಗಳನ್ನು ರಚಿಸುತ್ತದೆ.'
+            )}
+          </p>
+        </div>
+      </section>
+
+      {/* Featured Projects */}
+      <section className="max-w-screen-xl mx-auto px-6 md:px-12 pb-24" aria-label="Featured projects">
+        <div className="flex items-baseline justify-between mb-12">
+          <h2 className="text-xs tracking-widest uppercase text-[#8C8C88]">
+            {t('Selected Work', 'ಆಯ್ದ ಕೆಲಸ')}
+          </h2>
+          <Link
+            href="/work"
+            className="text-xs tracking-widest uppercase text-[#8C8C88] hover:text-[#1A1A18] transition-colors border-b border-transparent hover:border-[#1A1A18] pb-0.5"
+          >
+            {t('All Projects →', 'ಎಲ್ಲಾ ಪ್ರಾಜೆಕ್ಟ್‌ಗಳು →')}
+          </Link>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
+          {featured.map((project, i) => (
+            <ProjectCard key={project.id} project={project} priority={i < 2} />
+          ))}
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="bg-[#1A1A18] text-white py-24 md:py-32" aria-label="Call to action">
+        <div className="max-w-screen-xl mx-auto px-6 md:px-12 text-center">
+          <p className="text-xs tracking-widest uppercase text-white/40 mb-6">
+            {t('Begin a Conversation', 'ಸಂಭಾಷಣೆ ಪ್ರಾರಂಭಿಸಿ')}
+          </p>
+          <h2 className="text-3xl md:text-5xl font-light mb-10 max-w-xl mx-auto">
+            {t(
+              'Have a project in mind?',
+              'ಒಂದು ಯೋಜನೆ ಮನಸ್ಸಿನಲ್ಲಿದೆಯೇ?'
+            )}
+          </h2>
+          <Link
+            href="/contact"
+            className="inline-block text-sm tracking-widest uppercase border border-white/40 px-8 py-4 hover:bg-white hover:text-[#1A1A18] transition-colors duration-300"
+          >
+            {t('Get in Touch', 'ಸಂಪರ್ಕಿಸಿ')}
+          </Link>
+        </div>
+      </section>
+    </>
+  );
+}
