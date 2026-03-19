@@ -25,6 +25,15 @@ export default function HomeClient() {
         </div>
 
         <div className="relative z-10 max-w-screen-xl mx-auto px-6 md:px-12 w-full">
+          {/* TODO: Replace /brand/amber-vector.png with the final exported vector-style PNG asset */}
+          <Image
+            src="/brand/amber-vector.png"
+            alt="Amber Collective"
+            width={300}
+            height={100}
+            className="w-[180px] md:w-[240px] lg:w-[300px] h-auto object-contain mb-6"
+            priority
+          />
           <p className="text-xs tracking-widest uppercase text-white/60 mb-4">
             {t('Bangalore, India', 'ಬೆಂಗಳೂರು, ಭಾರತ')}
           </p>

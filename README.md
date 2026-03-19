@@ -63,7 +63,8 @@ Place project images in:
 ```
 public/
 ├── brand/
-│   └── amber.png           # Studio logo (replace with real logo)
+│   ├── amber.png           # Studio logo used in the navigation bar (replace with real logo)
+│   └── amber-vector.png    # Vector-style PNG logo used in the home page hero (replace with final exported asset)
 └── images/
     └── projects/
         ├── wood-stone-lounge/
