@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --amber-warm: #C8965A;
+    --amber-dark: #1A1A18;
+    --amber-light: #F9F7F4;
+    --amber-mid: #8C8C88;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: var(--amber-light);
+    color: var(--amber-dark);
+  }
+
+  ::selection {
+    background-color: var(--amber-warm);
+    color: white;
+  }
+}
+
+@layer utilities {
+  .text-amber-warm { color: var(--amber-warm); }
+  .bg-amber-warm { background-color: var(--amber-warm); }
+  .border-amber-warm { border-color: var(--amber-warm); }
+  .text-amber-mid { color: var(--amber-mid); }
+}
