@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { getFeaturedProjects } from '@/data/projects';
 import ProjectCard from '@/components/ProjectCard';
 import { useLanguage } from '@/context/LanguageContext';
-
+import { TEAM } from '@/data/team';
 export default function HomeClient() {
   const { t } = useLanguage();
   const featured = getFeaturedProjects();
@@ -87,6 +87,79 @@ export default function HomeClient() {
         </div>
       </section>
 
+      {/* Team */}
+      <section
+        className="max-w-screen-xl mx-auto px-6 md:px-12 pb-24"
+        aria-label="Team"
+      >
+        <div className="flex items-baseline justify-between mb-12">
+          <h2 className="text-xs tracking-widest uppercase text-[#8C8C88]">
+            {t('Team', 'Team')}
+          </h2>
+          <Link
+            href="/about"
+            className="text-xs tracking-widest uppercase text-[#8C8C88] hover:text-[#1A1A18] transition-colors border-b border-transparent hover:border-[#1A1A18] pb-0.5"
+          >
+            {t('About Us →', 'About Us →')}
+          </Link>
+        </div>
+
+        <div className="max-w-3xl mb-14 text-base md:text-lg leading-relaxed text-[#1A1A18]/90 space-y-6">
+          <p>
+            {t(
+              'Amber Collective is a dynamic young practice started in 2021 and based in Bangalore.',
+              'Amber Collective is a dynamic young practice started in 2021 and based in Bangalore.'
+            )}
+          </p>
+          <p>
+            {t(
+              'Our designs are contextually inspired with keen focus on the aspirations of the end user.',
+              'Our designs are contextually inspired with keen focus on the aspirations of the end user.'
+            )}
+          </p>
+          <p>
+            {t(
+              'We as a team have a collective work experience of over 15 years and in various cities such as Mumbai, Srilanka and Auroville apart from Bangalore.',
+              'We as a team have a collective work experience of over 15 years and in various cities such as Mumbai, Srilanka and Auroville apart from Bangalore.'
+            )}
+          </p>
+          <p>
+            {t(
+              'Being a multidisciplinary practice we aim at being a one stop solution for every aspect of a project.',
+              'Being a multidisciplinary practice we aim at being a one stop solution for every aspect of a project.'
+            )}
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-14">
+          {TEAM.map((member) => (
+            <article
+              key={member.name}
+              className="border border-[#1A1A18]/10 bg-white/40"
+            >
+              <div className="relative aspect-[4/5] w-full overflow-hidden bg-[#F1EEE9]">
+                <Image
+                  src={member.imageSrc}
+                  alt={member.imageAlt}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+
+              <div className="p-8">
+                <h3 className="text-xl md:text-2xl font-light text-[#1A1A18]">
+                  {t(member.name, member.name)}
+                </h3>
+                <p className="mt-2 text-xs tracking-widest uppercase text-[#8C8C88]">
+                  {t(member.role, member.role)}
+                </p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="bg-[#1A1A18] text-white py-24 md:py-32" aria-label="Call to action">
         <div className="max-w-screen-xl mx-auto px-6 md:px-12 text-center">
@@ -110,3 +183,4 @@ export default function HomeClient() {
     </>
   );
 }
+

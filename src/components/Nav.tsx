@@ -9,6 +9,7 @@ import { usePathname } from 'next/navigation';
 const NAV_LINKS = [
   { href: '/work', en: 'Work', kn: 'ಕೆಲಸ' },
   { href: '/studio', en: 'Studio', kn: 'ಸ್ಟುಡಿಯೋ' },
+  { href: '/about', en: 'About', kn: 'About' },
   { href: '/contact', en: 'Contact', kn: 'ಸಂಪರ್ಕ' },
 ];
 
