@@ -29,7 +29,7 @@ export default function AboutClient() {
           {t('Amber Collective', 'Amber Collective')}
         </h1>
 
-        <div className="mt-10 max-w-3xl space-y-6 text-base md:text-lg leading-relaxed text-[#1A1A18]/90">
+        <div className="mt-10 max-w-3xl space-y-3 text-base md:text-lg leading-relaxed text-[#1A1A18]/90">
           {ABOUT_TEXT.map((line) => (
             <p key={line}>{t(line, line)}</p>
           ))}

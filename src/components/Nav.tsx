@@ -26,11 +26,14 @@ export default function Nav() {
           <Image
             src="/brand/amber.png"
             alt="Amber Collective"
-            width={120}
-            height={40}
-            className="h-8 w-auto object-contain"
+            width={160}
+            height={56}
+            className="h-12 w-auto object-contain"
             priority
           />
+          <span className="text-base md:text-lg font-light tracking-widest uppercase text-[#1A1A18]">
+            Amber Collective
+          </span>
         </Link>
 
         {/* Desktop Nav */}
