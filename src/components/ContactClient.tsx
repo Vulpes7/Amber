@@ -39,6 +39,8 @@ export default function ContactClient() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    // TODO: Integrate with a backend API or email service (e.g., Resend, Formspree, or a Next.js Route Handler)
+    // This is currently front-end only — form data is not transmitted anywhere.
     setSubmitted(true);
   };
 

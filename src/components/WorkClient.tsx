@@ -50,13 +50,13 @@ export default function WorkClient() {
       </header>
 
       {/* Grid */}
-      <main className="max-w-screen-xl mx-auto px-6 md:px-12 pb-24">
+      <section className="max-w-screen-xl mx-auto px-6 md:px-12 pb-24" aria-label="Project grid">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
           {filtered.map((project, i) => (
             <ProjectCard key={project.id} project={project} priority={i < 3} />
           ))}
         </div>
-      </main>
+      </section>
     </div>
   );
 }

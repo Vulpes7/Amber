@@ -68,9 +68,9 @@ export default function Nav() {
           aria-label={menuOpen ? 'Close menu' : 'Open menu'}
           aria-expanded={menuOpen}
         >
-          <span className={`block w-6 h-px bg-[#1A1A18] transition-transform duration-200 ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} />
+          <span className={`block w-6 h-px bg-[#1A1A18] transition-transform duration-200 ${menuOpen ? 'rotate-45 translate-y-[7px]' : ''}`} />
           <span className={`block w-6 h-px bg-[#1A1A18] transition-opacity duration-200 ${menuOpen ? 'opacity-0' : ''}`} />
-          <span className={`block w-6 h-px bg-[#1A1A18] transition-transform duration-200 ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
+          <span className={`block w-6 h-px bg-[#1A1A18] transition-transform duration-200 ${menuOpen ? '-rotate-45 -translate-y-[7px]' : ''}`} />
         </button>
       </div>
 

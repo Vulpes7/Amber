@@ -5,6 +5,7 @@ import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://ambercollective.in'),
   title: {
     default: 'Amber Collective — Architecture & Interiors, Bangalore',
     template: '%s | Amber Collective',
