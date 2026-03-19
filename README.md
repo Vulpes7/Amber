@@ -4,19 +4,29 @@ Contemporary architecture and interior design studio based in Bangalore, India.
 
 ## Tech Stack
 
-- **Framework**: Next.js 14 (App Router)
+- **Framework**: Next.js 16 (App Router, Turbopack)
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS v3
-- **Fonts**: Geist (via next/font)
+- **Fonts**: Geist (local, bundled)
+
+## Prerequisites
+
+- **Node.js ≥ 20.9.0** — check with `node --version` ([download](https://nodejs.org/en/download))
+- **npm ≥ 10** — bundled with Node 20+; check with `npm --version`
+
+> If you use [nvm](https://github.com/nvm-sh/nvm), run `nvm use` in the project root to switch to the correct version automatically.
 
 ## Getting Started
 
 ```bash
+# 1. Install dependencies
 npm install
+
+# 2. Start the development server
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open [http://localhost:3000](http://localhost:3000) in your browser — the page hot-reloads as you edit files.
 
 ## Build for Production
 
