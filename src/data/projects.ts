@@ -241,6 +241,141 @@ export const projects: Project[] = [
       { label: 'Location', value: 'Bangalore, India' },
     ],
   },
+  {
+    id: '10',
+    slug: 'landscapes-01-courtyard-revival',
+    title: 'Overgrown Courtyard Revival',
+    titleKn: 'ಅಂಗಳದ ಪುನರುಜ್ಜೀವನ',
+    category: 'Landscapes',
+    categoryKn: 'ಭೂದೃಶ್ಯ',
+    location: 'Bangalore, India',
+    year: '2023',
+    status: 'built',
+    featured: true,
+    coverImage: '/images/projects/landscapes-01-courtyard-revival/after.jpg',
+    images: [
+      '/images/projects/landscapes-01-courtyard-revival/before.jpg',
+      '/images/projects/landscapes-01-courtyard-revival/after.jpg',
+    ],
+    narrative:
+      'Before: A neglected inner courtyard consumed by uncontrolled vegetation and broken paving, its potential hidden beneath years of disuse. After: A serene garden courtyard with curated tropical planting, flush stone paving, and a central water vessel that anchors the space in quiet contemplation.',
+    narrativeKn:
+      'ಮೊದಲು: ಅನಿಯಂತ್ರಿತ ಸಸ್ಯಗಳಿಂದ ತುಂಬಿದ ಅಂಗಳ. ನಂತರ: ಶಾಂತ ಉದ್ಯಾನ ಅಂಗಳ ಮತ್ತು ಕೇಂದ್ರ ಜಲ ಪಾತ್ರೆ.',
+    facts: [
+      { label: 'Type', value: 'Residential Landscape' },
+      { label: 'Area', value: '450 sq ft' },
+      { label: 'Year', value: '2023' },
+      { label: 'Location', value: 'Bangalore, India' },
+    ],
+  },
+  {
+    id: '11',
+    slug: 'landscapes-02-dry-garden-terrace',
+    title: 'Dry Garden Terrace',
+    titleKn: 'ಒಣ ಉದ್ಯಾನ ಟೆರೇಸ್',
+    category: 'Landscapes',
+    categoryKn: 'ಭೂದೃಶ್ಯ',
+    location: 'Bangalore, India',
+    year: '2023',
+    status: 'built',
+    featured: false,
+    coverImage: '/images/projects/landscapes-02-dry-garden-terrace/after.jpg',
+    images: [
+      '/images/projects/landscapes-02-dry-garden-terrace/before.jpg',
+      '/images/projects/landscapes-02-dry-garden-terrace/after.jpg',
+    ],
+    narrative:
+      'Before: A bare concrete terrace exposed to harsh afternoon sun, lacking shade or planting. After: A contemplative dry garden with raked gravel, specimen boulders, and drought-tolerant succulents arranged in considered asymmetry — drawing on Japanese karesansui principles adapted to the Deccan climate.',
+    narrativeKn:
+      'ಮೊದಲು: ಬರಿ ಕಾಂಕ್ರೀಟ್ ಟೆರೇಸ್. ನಂತರ: ರಾಶಿ ಜಲ್ಲಿ ಮತ್ತು ಶಿಲೆಗಳೊಂದಿಗೆ ಧ್ಯಾನದ ಒಣ ಉದ್ಯಾನ.',
+    facts: [
+      { label: 'Type', value: 'Terrace Landscape' },
+      { label: 'Area', value: '280 sq ft' },
+      { label: 'Year', value: '2023' },
+      { label: 'Location', value: 'Bangalore, India' },
+    ],
+  },
+  {
+    id: '12',
+    slug: 'landscapes-03-tropical-water-garden',
+    title: 'Tropical Water Garden',
+    titleKn: 'ಉಷ್ಣವಲಯ ಜಲ ಉದ್ಯಾನ',
+    category: 'Landscapes',
+    categoryKn: 'ಭೂದೃಶ್ಯ',
+    location: 'Bangalore, India',
+    year: '2022',
+    status: 'built',
+    featured: true,
+    coverImage: '/images/projects/landscapes-03-tropical-water-garden/after.jpg',
+    images: [
+      '/images/projects/landscapes-03-tropical-water-garden/before.jpg',
+      '/images/projects/landscapes-03-tropical-water-garden/after.jpg',
+    ],
+    narrative:
+      'Before: An unused rear garden, compacted earth and sparse informal planting offering no reprieve from the urban context. After: A lush tropical garden centred on a reflecting pool edged in black granite. Layers of palm, heliconia, and broad-leaf plantings create a private rainforest atmosphere within the city.',
+    narrativeKn:
+      'ಮೊದಲು: ಬಳಕೆಯಿಲ್ಲದ ಹಿಂಭಾಗದ ಉದ್ಯಾನ. ನಂತರ: ಕಪ್ಪು ಗ್ರಾನೈಟ್ ಕೊಳ ಮತ್ತು ಉಷ್ಣವಲಯ ಸಸ್ಯಗಳೊಂದಿಗೆ ಸಮೃದ್ಧ ಉದ್ಯಾನ.',
+    facts: [
+      { label: 'Type', value: 'Residential Landscape' },
+      { label: 'Area', value: '620 sq ft' },
+      { label: 'Year', value: '2022' },
+      { label: 'Location', value: 'Bangalore, India' },
+    ],
+  },
+  {
+    id: '13',
+    slug: 'landscapes-04-heritage-garden-restoration',
+    title: 'Heritage Garden Restoration',
+    titleKn: 'ಪರಂಪರೆ ಉದ್ಯಾನ ಪುನರುದ್ಧಾರ',
+    category: 'Landscapes',
+    categoryKn: 'ಭೂದೃಶ್ಯ',
+    location: 'Bangalore, India',
+    year: '2023',
+    status: 'built',
+    featured: false,
+    coverImage: '/images/projects/landscapes-04-heritage-garden-restoration/after.jpg',
+    images: [
+      '/images/projects/landscapes-04-heritage-garden-restoration/before.jpg',
+      '/images/projects/landscapes-04-heritage-garden-restoration/after.jpg',
+    ],
+    narrative:
+      'Before: A once-formal colonial-era garden reduced to overgrown hedges and deteriorating pathways, its original geometry lost to decades of neglect. After: Careful restoration of the axial layout, clipped box parterres, and period-appropriate planting reestablish the garden\'s historic dignity while introducing a contemporary utility for family living.',
+    narrativeKn:
+      'ಮೊದಲು: ನಿರ್ಲಕ್ಷ್ಯದಿಂದ ಹಾಳಾದ ವಸಾಹತು-ಯುಗದ ಉದ್ಯಾನ. ನಂತರ: ಐತಿಹಾಸಿಕ ಕ್ರಮ ಮತ್ತು ಆಧುನಿಕ ಉಪಯೋಗಕ್ಕಾಗಿ ಪುನರುದ್ಧರಿಸಿದ ಉದ್ಯಾನ.',
+    facts: [
+      { label: 'Type', value: 'Heritage Landscape' },
+      { label: 'Area', value: '1,800 sq ft' },
+      { label: 'Year', value: '2023' },
+      { label: 'Location', value: 'Bangalore, India' },
+    ],
+  },
+  {
+    id: '14',
+    slug: 'landscapes-05-urban-rooftop-retreat',
+    title: 'Urban Rooftop Retreat',
+    titleKn: 'ನಗರ ಟೆರೇಸ್ ಆಶ್ರಯ',
+    category: 'Landscapes',
+    categoryKn: 'ಭೂದೃಶ್ಯ',
+    location: 'Bangalore, India',
+    year: '2024',
+    status: 'built',
+    featured: true,
+    coverImage: '/images/projects/landscapes-05-urban-rooftop-retreat/after.jpg',
+    images: [
+      '/images/projects/landscapes-05-urban-rooftop-retreat/before.jpg',
+      '/images/projects/landscapes-05-urban-rooftop-retreat/after.jpg',
+    ],
+    narrative:
+      'Before: An exposed rooftop slab used only for storage, isolated from the life of the house below. After: A verdant rooftop garden with raised planting beds, a timber deck, and a pergola draped in seasonal creepers — transforming an overlooked surface into the home\'s most cherished outdoor room.',
+    narrativeKn:
+      'ಮೊದಲು: ಶೇಖರಣೆಗಾಗಿ ಮಾತ್ರ ಬಳಸಲಾದ ತೆರೆದ ಛಾವಣಿ. ನಂತರ: ಎತ್ತರಿಸಿದ ತೋಟ, ಮರದ ಡೆಕ್ ಮತ್ತು ಪರ್ಗೋಲಾದೊಂದಿಗೆ ಹಸಿರು ಛಾವಣಿ ಉದ್ಯಾನ.',
+    facts: [
+      { label: 'Type', value: 'Rooftop Landscape' },
+      { label: 'Area', value: '750 sq ft' },
+      { label: 'Year', value: '2024' },
+      { label: 'Location', value: 'Bangalore, India' },
+    ],
+  },
 ];
 
 export function getProjectBySlug(slug: string): Project | undefined {
