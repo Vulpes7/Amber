@@ -5,7 +5,7 @@ import { projects } from '@/data/projects';
 import ProjectCard from '@/components/ProjectCard';
 import { useLanguage } from '@/context/LanguageContext';
 
-const CATEGORIES = ['All', 'Interior', 'Architecture'];
+const CATEGORIES = ['All', 'Interior', 'Architecture', 'Landscapes'];
 
 export default function WorkClient() {
   const { t } = useLanguage();
@@ -20,6 +20,7 @@ export default function WorkClient() {
     All: 'ಎಲ್ಲಾ',
     Interior: 'ಒಳಾಂಗಣ',
     Architecture: 'ವಾಸ್ತುಶಿಲ್ಪ',
+    Landscapes: 'ಭೂದೃಶ್ಯ',
   };
 
   return (
